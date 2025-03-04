@@ -5,8 +5,7 @@ from library.mongo import create_blog_entries, init_mongo_db
 
 
 def give_mongo_env():
-    load_dotenv("/var/www/private/nodejs/shop/rootdata/.env.mongo.internals")
-    load_dotenv("/var/www/private/nodejs/shop/userdata/.env.mongo.internals")
+    load_dotenv(".env")
     MONGO_HOST = "127.0.0.1"
     MONGO_PORT = 27017 #os.getenv('MONGO_PORT')
 
